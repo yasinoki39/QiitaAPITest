@@ -31,7 +31,6 @@ struct User: Codable {
 }
 
 class ViewController: UIViewController {
-    
     private let cellId = "cellId"
     private var qiitas = [Qiita]()
     
