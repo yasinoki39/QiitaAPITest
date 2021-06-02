@@ -47,8 +47,8 @@ class ViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(QiitaTableViewCell.self, forCellReuseIdentifier: cellId)
-        
+      
+        tableView.register(QiitaTableViewCell.self, forCellReuseIdentifier: cellId
         navigationItem.title = "フォトビュワー"
         
         getQiitaApi()
