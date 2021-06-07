@@ -70,7 +70,9 @@ class ViewController: UIViewController {
             if let data = data {
                 do {
                     let qiita = try JSONDecoder().decode([Qiita].self, from: data)
+                    
                     self.qiitas = qiita
+                    
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
                     }
